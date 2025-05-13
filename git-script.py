@@ -2,9 +2,13 @@ import json
 import os
 import subprocess
 import sys
+from pathlib import Path
 
 import requests
 from git import Repo
+
+
+# DIR_PATH = Path(~/projects/repos-de-teste).resolve().parent
 
 
 def get_github_token() -> str:
